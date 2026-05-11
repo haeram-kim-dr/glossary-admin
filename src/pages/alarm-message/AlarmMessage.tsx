@@ -54,6 +54,9 @@ export default function AlarmMessage() {
         <h1 className="text-nowrap">Alarm Messages</h1>
         <SearchBar keyword={searchKeyword} setKeyword={setSearchKeyword} />
       </div>
+      <div className="mt-4 rounded-md border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+        {`참고사항 : {{0}}은 변수 영역입니다`}
+      </div>
       <div className="h-8" />
       <Link to="/">용어집으로 이동</Link>
       <AlarmMessageTable rows={filteredItems} />
